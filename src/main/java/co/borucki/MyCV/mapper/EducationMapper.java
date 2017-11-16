@@ -6,7 +6,7 @@ import org.mapstruct.Mapper;
 
 import java.util.List;
 
-@Mapper(componentModel = "sring")
+@Mapper(componentModel = "spring")
 public interface EducationMapper {
     EducationDTO toEducationDTO(Education education);
 
