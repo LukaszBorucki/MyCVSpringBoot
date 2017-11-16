@@ -1,6 +1,7 @@
 package co.borucki.MyCV.repository;
 
 import co.borucki.MyCV.BasicData;
+import co.borucki.MyCV.model.PersonalData;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -8,18 +9,18 @@ import java.util.List;
 
 @Repository
 public class PersonalDataRepository {
-    private List<PersonalDataRepository> personalDataRepositoryList = new ArrayList<>();
+    private List<PersonalData> personalDataList = new ArrayList<>();
 
     public PersonalDataRepository() {
-        personalDataRepositoryList.addAll(BasicData.BasicPersonalDataRepositoryData());
+        personalDataList.addAll(BasicData.BasicPersonalDataData());
     }
 
-    public List<PersonalDataRepository> findAll() {
-        return personalDataRepositoryList;
+    public List<PersonalData> findAll() {
+        return personalDataList;
     }
 
-    public PersonalDataRepository save(PersonalDataRepository personalDataRepository) {
-        personalDataRepositoryList.add(personalDataRepository);
-        return personalDataRepository;
+    public PersonalData save(PersonalData personalData) {
+        personalDataList.add(personalData);
+        return personalData;
     }
 }
