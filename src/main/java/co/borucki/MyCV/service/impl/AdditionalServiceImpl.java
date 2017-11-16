@@ -14,7 +14,7 @@ import java.util.List;
 public class AdditionalServiceImpl implements AdditionalService {
     private List<Additional> additionalList;
     @Autowired
-    private AdditionalRepository additionalRepository;
+    private AdditionalRepository additionalRepository = new AdditionalRepository();
 
     @Autowired
     private AdditionalMapper additionalMapper;
