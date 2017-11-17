@@ -25,3 +25,4 @@ nbdist/
 
 ###Private data###
 BasicData.java
+application.properties
