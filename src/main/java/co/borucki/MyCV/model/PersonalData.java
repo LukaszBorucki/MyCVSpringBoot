@@ -1,22 +1,44 @@
 package co.borucki.MyCV.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "personal_data")
 public class PersonalData {
+ @Id
+ @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private String name;
+    @Column(name = "name")
+ private String name;
+    @Column(name = "surname")
     private String surname;
+    @Column(name = "phone")
     private String phone;
+    @Column(name = "email")
     private String email;
+    @Column(name = "city")
     private String city;
+    @Column(name = "street")
     private String street;
+    @Column(name = "houseNo")
     private String houseNo;
+    @Column(name = "postCode")
     private String postCode;
+    @Column(name = "gitHub")
     private String gitHub;
+    @Column(name = "webService")
     private String webService;
+    @Column(name = "skype")
     private String skype;
+    @Column(name = "linkedIn")
     private String linkedIn;
+    @Column(name = "googleLocation")
     private String googleLocation;
+    @Column(name = "photo")
     private String photo;
+    @Column(name = "about_pl")
     private String aboutPl;
+    @Column(name = "about_en")
     private String aboutEn;
 
     public PersonalData() {

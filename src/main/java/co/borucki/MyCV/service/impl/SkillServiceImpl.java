@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class SkillServiceImpl implements SkillService {
     @Autowired
-    private SkillRepository skillRepository = new SkillRepository();
+    private SkillRepository skillRepository;
 
     @Autowired
     private SkillMapper skillMapper;

@@ -1,6 +1,12 @@
 package co.borucki.MyCV.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "additional")
 public class Additional {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String date;
     private String namePl;

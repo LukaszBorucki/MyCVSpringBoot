@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class AdditionalServiceImpl implements AdditionalService {
     @Autowired
-    private AdditionalRepository additionalRepository = new AdditionalRepository();
+    private AdditionalRepository additionalRepository;
 
     @Autowired
     private AdditionalMapper additionalMapper;

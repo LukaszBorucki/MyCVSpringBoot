@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class ExperienceCompanyServiceImpl implements ExperienceCompanyService {
     @Autowired
-    private ExperienceCompanyRepository experienceCompanyRepository = new ExperienceCompanyRepository();
+    private ExperienceCompanyRepository experienceCompanyRepository;
 
     @Autowired
     private ExperienceCompanyMapper experienceCompanyMapper;

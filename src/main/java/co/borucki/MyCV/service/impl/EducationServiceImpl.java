@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class EducationServiceImpl implements EducationService {
     @Autowired
-    private EducationRepository educationRepository = new EducationRepository();
+    private EducationRepository educationRepository;
 
     @Autowired
     private EducationMapper educationMapper;

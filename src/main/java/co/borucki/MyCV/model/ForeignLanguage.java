@@ -1,6 +1,12 @@
 package co.borucki.MyCV.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "foreign_languages")
 public class ForeignLanguage {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String namePl;
     private String nameEn;

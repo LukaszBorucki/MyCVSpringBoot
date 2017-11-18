@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class HobbiesServiceImpl implements HobbiesService {
     @Autowired
-    private HobbiesRepository hobbesRepository = new HobbiesRepository();
+    private HobbiesRepository hobbesRepository;
 
     @Autowired
     private HobbiesMapper hobbesMapper;

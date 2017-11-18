@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class PersonalDataServiceImpl implements PersonalDataService {
     @Autowired
-    private PersonalDataRepository personalDataRepository = new PersonalDataRepository();
+    private PersonalDataRepository personalDataRepository;
 
     @Autowired
     private PersonalDataMapper personalDataMapper;

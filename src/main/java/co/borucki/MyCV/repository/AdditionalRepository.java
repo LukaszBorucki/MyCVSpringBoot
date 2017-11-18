@@ -1,28 +1,15 @@
 package co.borucki.MyCV.repository;
 
-import co.borucki.MyCV.BasicData;
 import co.borucki.MyCV.model.Additional;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class AdditionalRepository {
-    private List<Additional> additionalList = new ArrayList<>();
+public interface AdditionalRepository extends CrudRepository<Additional, Long> {
+    List<Additional> findAll();
 
-    public AdditionalRepository() {
-        additionalList.addAll(BasicData.BasicAdditionalData());
-    }
-
-    public List<Additional> findAll() {
-        return additionalList;
-    }
-
-    public Additional save(Additional additional) {
-        additionalList.add(additional);
-        return additional;
-    }
-
+    Additional save(Additional additional);
 
 }

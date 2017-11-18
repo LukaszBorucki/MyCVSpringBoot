@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class ExperienceBranchServiceImpl implements ExperienceBranchService {
     @Autowired
-    private ExperienceBranchRepository experienceBranchRepository = new ExperienceBranchRepository();
+    private ExperienceBranchRepository experienceBranchRepository ;
 
     @Autowired
     private ExperienceBranchMapper experienceBranchMapper;

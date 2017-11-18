@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class ForeignLanguageServiceImpl implements ForeignLanguageService{
     @Autowired
-    private ForeignLanguageRepository foreignLanguageRepository = new ForeignLanguageRepository();
+    private ForeignLanguageRepository foreignLanguageRepository;
 
     @Autowired
     private ForeignLanguageMapper foreignLanguageMapper;
